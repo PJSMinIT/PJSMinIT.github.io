@@ -44,6 +44,6 @@ Welcome to my professional portfolio! This repository showcases my ongoing journ
 
 ---
 
-## Fun Fact
-Overly enthusiastic BJJ practitioner 🥋
-Long-time family caregiver, building patience and problem-solving skills
+## Fun Facts
+- Overly enthusiastic BJJ practitioner 🥋
+- Long-time family caregiver, building patience and problem-solving skills
