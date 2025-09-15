@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paulo Melo - SOC Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- TODO: criar css -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <img src="assets/PauloMelo.jpg" alt="Paulo Melo" width="150">
-        <!-- TODO: css e arredondar a imagem ou outro estilo  -->
         <h1>Paulo Melo</h1>
+        <img src="assets/PauloMelo.jpg" alt="Paulo Melo" width="150">
         <p><strong>Aspiring SOC Analyst & IT Support Specialist</strong></p>
     </header>
 
@@ -40,8 +38,7 @@
         <h2>Projects</h2>
         <ul>
             <p>Under construction...</p>
-            <!-- <li><a href="projects/project1.html">Project 1</a></li>
-            <li><a href="projects/project2.html">Project 2</a></li> -->
+            <!-- TODO: Add links to project subpages -->
             <li>More projects coming soon...</li>
         </ul>
     </section>
@@ -50,8 +47,7 @@
         <h2>Write-ups</h2>
         <ul>
             <p>Under construction...</p>
-            <!-- <li><a href="writeups/lab1.html">Lab 1</a></li>
-            <li><a href="writeups/lab2.html">Lab 2</a></li> -->
+            <!-- TODO: Add links to writeup subpages -->
             <li>More write-ups coming soon...</li>
         </ul>
     </section>
@@ -60,8 +56,8 @@
         <h2>Labs</h2>
         <ul>
             <p>Under construction...</p>
-            <!-- <li><a href="labs/tryhackme1.html">TryHackMe Lab 1</a></li>
-            <li><a href="labs/bluelab1.html">Blue Team Lab 1</a></li> -->
+            <!-- TODO: Add links to lab subpages -->
+            <li>More labs coming soon...</li>
         </ul>
     </section>
 
@@ -69,9 +65,8 @@
         <h2>Certifications</h2>
         <ul>
             <p>Under construction...</p>
-            <!-- <li><a href="certifications/aplus.pdf">CompTIA A+</a></li>
-            <li>More certifications coming soon...</li> -->
-            <!-- Procurar certificados antigos (Mac) -->
+            <!-- TODO: Add certifications -->
+            <li>More certs coming soon...</li>
         </ul>
     </section>
 
@@ -79,8 +74,8 @@
         <h2>Resources / Scripts</h2>
         <ul>
             <p>Under construction...</p>
-            <!-- <li><a href="resources/python_parser.py">Python Log Parser</a></li>
-            <li><a href="resources/powershell_script.ps1">PowerShell Script</a></li> -->
+            <!-- TODO: Add script links -->
+            <li>More scripts coming soon...</li>
         </ul>
     </section>
 
@@ -102,5 +97,20 @@
         </ul>
     </section>
 
+    <button id="backToTop">↑</button>
+
+    <script>
+        const backToTop = document.getElementById("backToTop");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTop.style.display = "block";
+            } else {
+                backToTop.style.display = "none";
+            }
+        };
+        backToTop.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
 </body>
 </html>
